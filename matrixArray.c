@@ -8,13 +8,23 @@ void main() {
  int row = 11;
  int col = 11;
  int arr[row][col];
+ int arrInverse[row][col];
  
- multiplicationTable(arr, sizeRow, sizeCol);
- reverseColumn
+ multiplicationTable(row, col, arr);
+ reverseColumn(row, col, arr, arrInverse);
  
  for (int i = 1; i < row; i++) {
   for (int j = 1; j < col; j++) {
    printf("%d ", arr[i][j]);
+  }
+  printf("\n");
+ }
+ 
+ printf("\n");
+ 
+ for (int i = 1; i < row; i++) {
+  for (int j = 1; j < col; j++) {
+   printf("%d ", arrInverse[i][j]);
   }
   printf("\n");
  }
