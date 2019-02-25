@@ -5,15 +5,19 @@
 
 void main() {
  
- int sizeRow = 10;
- int sizeCol = 10;
- int arr[sizeRow][sizeCol];
- int arrInverse[sizeRow][sizeCol];
+ int row = 11;
+ int col = 11;
+ int arr[row][col];
  
- multiplicationTable[arr, sizeRow, sizeCol];
- reverseColumn[arr, sizeRow, sizeCol, arrInverse, sizeRow, sizeCol];
+ multiplicationTable(arr, sizeRow, sizeCol);
+ reverseColumn
  
- printf("We'll do later\n");
+ for (int i = 1; i < row; i++) {
+  for (int j = 1; j < col; j++) {
+   printf("%d ", arr[i][j]);
+  }
+  printf("\n");
+ }
  
  return;
 }
