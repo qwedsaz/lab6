@@ -19,12 +19,17 @@ int * generateRandomArray(int size);
  */
 void printArray(const int *arr, int size);
 
-/*
- * TODO:
- *  1. Write prototypes for each of these functions
- *  2. Write documentation for each of these functions
- *  3. Implement the functions in stats.c
+/**
+ * Get the mean of the array
  */
-double getMean( ,  );
-int getMin( ,  );
-int getMax( , );
+double getMean(const int *arr, int size);
+
+/**
+ * Determine the minimum value in the array
+ */
+int getMin(const int *arr, int size);
+
+/**
+ * Determine the maximum value in the array
+ */
+int getMax(const int *arr, int size);
