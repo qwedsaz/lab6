@@ -4,6 +4,7 @@
 #include "matrices.h"
 
 void main() {
+ 
  int sizeRow = 10;
  int sizeCol = 10;
  int arr[sizeRow][sizeCol];
