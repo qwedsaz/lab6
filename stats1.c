@@ -8,7 +8,7 @@ void readInArray(int *arr, int size) {
   int i;
   printf("Enter your list of numbers: ");
   for (i = 0; i < size; i++) {
-    scanf("%d", arr[i]);
+    scanf("%d", &arr[i]);
   }
   return;
 }
@@ -29,12 +29,30 @@ void printArray(const int *arr, int size) {
   printf("%d ]\n ", arr[size-1]);
 }
 
-double getMean(  ,  ) {
+double getMean(const int *arr, int size) {
+  double totVal = 0;
+  for (int i = 0; i < size; i++) {
+    totVal += arr[i];
+  }
+  return totVal / size;
 }
 
-int getMin(  ,  ) {
+int getMin(const int *arr, int size) {
+  int min = arr[0];
+  for (i = 0; i < size; i++) {
+    if (min > arr[i]) {
+      min = arr[i];
+    }
+  }
+  return min;
 }
 
-int getMax(  , ) {
-
+int getMax(const int *arr, int size) {
+  int max = arr[0];
+  for (i = 0; i < size; i++) {
+    if (max < arr[i]) {
+      max = arr[i];
+    }
+  }
+  return max;
 }
