@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-#include "stats.h"
+#include "stats1.h"
 
 #define SIZE 500
 
