@@ -13,8 +13,10 @@ void main() {
  multiplicationTable(row, col, arr);
  reverseColumn(row, col, arr, arrInverse);
  
- for (int i = 1; i < row; i++) {
-  for (int j = 1; j < col; j++) {
+ int i = 1;
+ int j = 1;
+ for (i = 1; i < row; i++) {
+  for (j = 1; j < col; j++) {
    printf("%d ", arr[i][j]);
   }
   printf("\n");
@@ -22,8 +24,10 @@ void main() {
  
  printf("\n");
  
- for (int i = 1; i < row; i++) {
-  for (int j = 1; j < col; j++) {
+ i = 1;
+ j = 1;
+ for (i = 1; i < row; i++) {
+  for (j = 1; j < col; j++) {
    printf("%d ", arrInverse[i][j]);
   }
   printf("\n");
